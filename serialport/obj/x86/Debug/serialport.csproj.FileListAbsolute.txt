@@ -1,0 +1,225 @@
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\Interop.Microsoft.Office.Core.dll
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport._485SetParameter.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.Form1.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorAddr.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBase.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorIP.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorTime.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetLimit.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetSample.resources
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\office.dll
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+E:\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\office.xml
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\Interop.Microsoft.Office.Core.dll
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\office.dll
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\bin\x86\Debug\office.xml
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.Set485Parameter.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.Form1.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorAddr.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBase.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorIP.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorTime.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetLimit.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.SetSample.resources
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.Cache
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+D:\工具与接口开发程序\软件工具\生产调试工具 - 集中器调试工具 - 副本\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\bin\x86\Debug\serialport.exe.config
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.Set485Parameter.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.Form1.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetBackup.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorAddr.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBase.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorIP.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorTime.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetInterval.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetLimit.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetSample.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetSamples.resources
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.Cache
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+C:\Program Files\feiq\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\bin\x86\Debug\serialport.exe.config
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.AddressSwitch.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.Set485Parameter.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.Form1.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetBackup.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorAddr.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBase.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorIP.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorTime.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetInterval.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetLimit.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetSample.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetSamples.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpload.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpthe.resources
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+C:\Users\Administrator\Desktop\Recv Files\接收文件\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.AddressSwitch.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.Set485Parameter.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.Form1.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetBackup.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorAddr.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBase.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorIP.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorTime.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetInterval.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetLimit.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetSample.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetSamples.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpload.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpthe.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.Cache
+E:\生产调试工具\serialport\bin\x86\Debug\serialport.exe.config
+E:\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+E:\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetModuleIP.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetDelay.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBaseGn.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.SetTime.resources
+E:\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.CoreCompileInputs.cache
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\bin\x86\Debug\serialport.exe.config
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.AddressSwitch.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.Set485Parameter.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.Form1.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetBackup.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorAddr.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBaseGn.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBase.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorIP.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorTime.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetDelay.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetInterval.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetLimit.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetModuleIP.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetSample.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetSamples.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetTime.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpload.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpthe.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.cache
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.CoreCompileInputs.cache
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.Update.resources
+E:\备份压缩包\生产调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.SetSIM.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\serialport.exe.config
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.AddressSwitch.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.Set485Parameter.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.Form1.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetBackup.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorAddr.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBaseGn.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBase.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorIP.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorTime.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetDelay.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetInterval.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetLimit.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetModuleIP.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetSample.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetSamples.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetSIM.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetTime.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpload.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpthe.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.Update.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.cache
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.CoreCompileInputs.cache
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetParams.resources
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\CSkin.dll
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\CSkin.xml
+E:\备份压缩包\生产调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.CopyComplete
+F:\SVN文档\研发部软件组\调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\serialport.exe.config
+F:\SVN文档\研发部软件组\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+F:\SVN文档\研发部软件组\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\serialport.exe.config
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\CSkin.dll
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\bin\x86\Debug\CSkin.xml
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.AddressSwitch.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.Set485Parameter.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.Form1.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetBackup.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorAddr.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBaseGn.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorBase.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorIP.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetCollectorTime.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetDelay.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetInterval.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetLimit.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetModuleIP.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetParams.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetSample.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetSamples.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetSIM.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetTime.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpload.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.SetUpthe.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.Update.resources
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.Cache
+E:\SVN库文件\调试工具\生产调试工具-通用\生产调试工具\serialport\obj\x86\Debug\serialport.csprojResolveAssemblyReference.cache
+E:\调试工具\生产调试工具\serialport\bin\x86\Debug\serialport.exe.config
+E:\调试工具\生产调试工具\serialport\bin\x86\Debug\serialport.exe
+E:\调试工具\生产调试工具\serialport\bin\x86\Debug\serialport.pdb
+E:\调试工具\生产调试工具\serialport\bin\x86\Debug\CSkin.dll
+E:\调试工具\生产调试工具\serialport\bin\x86\Debug\CSkin.xml
+E:\调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.serialport.resources
+E:\调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+E:\调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.About.resources
+E:\调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.Cache
+E:\调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.exe
+E:\调试工具\生产调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\serialport.exe.config
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\serialport.exe
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\serialport.pdb
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\CSkin.dll
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\CSkin.xml
+E:\调试工具\串口调试工具\serialport\obj\x86\Debug\serialport.serialport.resources
+E:\调试工具\串口调试工具\serialport\obj\x86\Debug\serialport.Properties.Resources.resources
+E:\调试工具\串口调试工具\serialport\obj\x86\Debug\serialport.About.resources
+E:\调试工具\串口调试工具\serialport\obj\x86\Debug\serialport.csproj.GenerateResource.Cache
+E:\调试工具\串口调试工具\serialport\obj\x86\Debug\serialport.exe
+E:\调试工具\串口调试工具\serialport\obj\x86\Debug\serialport.pdb
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\NPOI.dll
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\NPOI.OOXML.dll
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\NPOI.OpenXml4Net.dll
+E:\调试工具\串口调试工具\serialport\bin\x86\Debug\NPOI.OpenXmlFormats.dll
+E:\调试工具\串口调试工具\serialport\obj\x86\Debug\serialport.updateName.resources

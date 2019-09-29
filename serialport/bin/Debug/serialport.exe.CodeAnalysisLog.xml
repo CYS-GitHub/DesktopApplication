@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="E:\调试工具\串口调试工具\serialport\bin\x86\Debug\serialport.exe">
+   <Modules>
+    <Module Name="serialport.exe">
+     <Namespaces>
+      <Namespace Name="serialport">
+       <Types>
+        <Type Name="About" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'About' 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: 'Skin_VS', 'CCSkinMain'</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ExcelHelper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DataTableToExcel(System.Data.DataTable,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\调试工具\串口调试工具\serialport\HelperClasses" File="ExcelHelper.cs" Line="132">可以在方法 'ExcelHelper.DataTableToExcel(DataTable, string)' 中多次释放对象 'fs'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 132</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ImportExcelToDataTable(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\调试工具\串口调试工具\serialport\HelperClasses" File="ExcelHelper.cs" Line="60">'ExcelHelper.ImportExcelToDataTable(string)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="E:\调试工具\串口调试工具\serialport\HelperClasses" File="ExcelHelper.cs" Line="68">可以在方法 'ExcelHelper.ImportExcelToDataTable(string)' 中多次释放对象 'cn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 68</Issue>
+            </Message>
+            <Message TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="E:\调试工具\串口调试工具\serialport\HelperClasses" File="ExcelHelper.cs" Line="51">传递给 'ExcelHelper.ImportExcelToDataTable(string)' 中的 'OleDbDataAdapter.OleDbDataAdapter(string, OleDbConnection)' 的查询字符串可能包含以下变量 'schema.Rows[0]["TABLE_NAME"]'。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PublicClass" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetSerialPortRecvData(System.IO.Ports.SerialPort)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\调试工具\串口调试工具\serialport\HelperClasses" File="PublicClass.cs" Line="55">'PublicClass.GetSerialPortRecvData(SerialPort)' 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="serialport" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'serialport' 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: 'Skin_VS', 'CCSkinMain'</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#cycleSend()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2674">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2681">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2694">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2701">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2717">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2723">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2736">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2742">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2759">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2765">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2778">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2784">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+             <Issue Certainty="75" Level="CriticalError" Path="E:\调试工具\串口调试工具\serialport" File="serialport.cs" Line="2795">'serialport.cycleSend()' 锁定类型 'serialport' 的引用。请使用对具有强标识的对象的锁定替换它。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="updateName" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405" Status="Active" Created="2019-09-19 08:54:15Z" FixCategory="DependsOnFix">
+           <Issue Certainty="90" Level="Error">'updateName' 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: 'Skin_VS', 'CCSkinMain'</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="serialport.Properties">
+       <Types>
+        <Type Name="Resources" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="ExcludedInSource" Created="2019-09-19 08:54:15Z" FixCategory="NonBreaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>避免使用未调用的私有代码</Name>
+   <Description>存在对外部不可见的未调用代码，该代码不是已知的运行时入口点。如果错误地引发此冲突，请向 Visual Studio 代码分析团队发送问题报告。</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ComVisibleTypeBaseTypesShouldBeComVisible" Category="Microsoft.Interoperability" CheckId="CA1405">
+   <Name>COM 可见类型的基类型应对 COM 可见</Name>
+   <Description>COM 可见类型应具有 COM 一致可见的对象层次结构。</Description>
+   <Resolution Name="Default">{0} 被标记为 ComVisible(true)，但在其对象层次结构中具有下列 ComVisible(false) 类型: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182202.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotLockOnObjectsWithWeakIdentity" Category="Microsoft.Reliability" CheckId="CA2002">
+   <Name>不要锁定具有弱标识的对象</Name>
+   <Description>不要锁定可能跨 AppDomain 抽取的对象或没有强标识的对象。</Description>
+   <Resolution Name="Default">{0} 锁定类型 {1} 的引用。请使用对具有强标识的对象的锁定替换它。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182290.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="reliabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>再次引发以保留堆栈详细信息</Name>
+   <Description>重复引发捕获的异常时，请使用 IL 再次引发指令保留原始堆栈详细信息。</Description>
+   <Resolution Name="Default">{0} 再次引发捕获的异常并将其显式地指定为一个参数。请改用不带参数的“throw”以保留该异常最初引发时所在的堆栈位置。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 132</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="检查 SQL 查询是否存在安全漏洞" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>检查 SQL 查询是否存在安全漏洞</Name>
+   <Description>通过用户输入生成的 SQL 命令字符串容易受到 SQL 注入式攻击。Microsoft SQL Server 和其他数据库服务器支持存储过程和参数化 SQL 查询，这将降低受到注入式攻击的风险。</Description>
+   <Resolution Name="WithNonLiterals">传递给 {1} 中的 {0} 的查询字符串可能包含以下变量 {2}。如果其中的任意变量可能来自用户输入，请考虑使用存储过程或参数化 SQL 查询，而不是通过字符串串联来生成查询。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

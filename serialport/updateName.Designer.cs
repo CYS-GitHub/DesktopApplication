@@ -100,6 +100,7 @@
             this.Controls.Add(this.lbl_txt);
             this.Name = "updateName";
             this.Text = "注释";
+            this.Load += new System.EventHandler(this.updateName_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

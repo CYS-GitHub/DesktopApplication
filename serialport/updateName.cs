@@ -29,5 +29,10 @@ namespace serialport
         {
             this.Close();
         }
+
+        private void updateName_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

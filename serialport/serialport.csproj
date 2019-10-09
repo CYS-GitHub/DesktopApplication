@@ -160,10 +160,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConvertStr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertStr.Designer.cs">
+      <DependentUpon>ConvertStr.cs</DependentUpon>
+    </Compile>
     <Compile Include="HelperClasses\ExcelHelper.cs" />
     <Compile Include="HelperClasses\LogInfo.cs" />
     <Compile Include="HelperClasses\LogUtility.cs" />
     <Compile Include="HelperClasses\CommonlyHelper.cs" />
+    <Compile Include="HelperClasses\RWini.cs" />
     <Compile Include="serialport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +195,9 @@
     <Compile Include="updateName.Designer.cs">
       <DependentUpon>updateName.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConvertStr.resx">
+      <DependentUpon>ConvertStr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="serialport.resx">
       <DependentUpon>serialport.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -230,7 +240,6 @@
     <Content Include="DLL\CSkin.dll" />
     <Content Include="DLL\CSkin.XML" />
     <Content Include="Images\bitbug_favicon.ico" />
-    <Content Include="Images\favicon.ico" />
     <Content Include="Images\START.ico" />
   </ItemGroup>
   <ItemGroup>

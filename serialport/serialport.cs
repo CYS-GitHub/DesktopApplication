@@ -191,7 +191,7 @@ namespace serialport
                 cmbPortName3.SelectedIndex = 0;
             }
             cbo_timeSend.Enabled = false;
-            cbo_IntoTheSystem.SelectedIndex = 0;
+
             skinTabControl1.SelectedIndex = 0;
 
             if (DataGridView1.Rows.Count < 100)
@@ -206,6 +206,37 @@ namespace serialport
                 }
 
             }
+
+
+            RWini ini = new RWini(Application.StartupPath + "\\config.ini");
+            cmbStopBits.Text = ini.ReadValue("", "cmbStopBits");
+            cmbBaudRate.Text = ini.ReadValue("", "cmbBaudRate");
+            cmbParity.Text = ini.ReadValue("", "cmbParity");
+            cmbDataBits.Text = ini.ReadValue("", "cmbDataBits");
+
+            cmbStopBits2.Text = ini.ReadValue("", "cmbStopBits2");
+            cmbBaudRate2.Text = ini.ReadValue("", "cmbBaudRate2");
+            cmbParity2.Text = ini.ReadValue("", "cmbParity2");
+            cmbDataBits2.Text = ini.ReadValue("", "cmbDataBits2");
+
+
+            cmbStopBits3.Text = ini.ReadValue("", "cmbStopBits3");
+            cmbBaudRate3.Text = ini.ReadValue("", "cmbBaudRate3");
+            cmbParity3.Text = ini.ReadValue("", "cmbParity3");
+            cmbDataBits3.Text = ini.ReadValue("", "cmbDataBits3");
+
+
+            DataTable dt = ExcelHelper.ImportExcelToDataTable(Application.StartupPath + "\\SaveExcel.xls");
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DataGridView1.Rows[i].Cells["Column1"].Value = dt.Rows[i][0].ToString() == "1" ? true : false;
+                DataGridView1.Rows[i].Cells["Column2"].Value = dt.Rows[i][1].ToString();
+                DataGridView1.Rows[i].Cells["Column3"].Value = dt.Rows[i][2].ToString();
+                //DataGridView1.Rows[i].Cells["Column4"].Value = dt.Rows[i][3].ToString();
+                DataGridView1.Rows[i].Cells["Column5"].Value = dt.Rows[i][4].ToString();
+            }
+
+
         }
 
         private void MainForm_Resize(object sender, EventArgs e)//重绘事件
@@ -286,14 +317,12 @@ namespace serialport
                 if (comport.IsOpen)
                 {
                     btn_Open.Text = "&C关闭端口";
-                    Lbl_Flag.Text = "开启";
-                    Lbl_Flag.ForeColor = Color.Green;
+
                 }
                 else
                 {
                     btn_Open.Text = "&O打开端口";
-                    Lbl_Flag.Text = "关闭";
-                    Lbl_Flag.ForeColor = Color.Red;
+
                 }
                 if (comport.IsOpen) txt_Send.Focus();
             }
@@ -485,6 +514,91 @@ namespace serialport
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
+
+            RWini ini = new RWini(Application.StartupPath + "\\config.ini");
+            ini.WriteValue("", "cmbStopBits", cmbStopBits.Text);
+            ini.WriteValue("", "cmbBaudRate", cmbBaudRate.Text);
+            ini.WriteValue("", "cmbParity", cmbParity.Text);
+            ini.WriteValue("", "cmbDataBits", cmbDataBits.Text);
+
+
+            ini.WriteValue("", "cmbStopBits2", cmbStopBits2.Text);
+            ini.WriteValue("", "cmbBaudRate2", cmbBaudRate2.Text);
+            ini.WriteValue("", "cmbParity2", cmbParity2.Text);
+            ini.WriteValue("", "cmbDataBits2", cmbDataBits2.Text);
+
+            ini.WriteValue("", "cmbStopBits3", cmbStopBits3.Text);
+            ini.WriteValue("", "cmbBaudRate3", cmbBaudRate3.Text);
+            ini.WriteValue("", "cmbParity3", cmbParity3.Text);
+            ini.WriteValue("", "cmbDataBits3", cmbDataBits3.Text);
+
+
+            //保存发送内容
+
+            if (DataGridView1.Rows.Count == 0)
+            {
+                Close();
+                return;
+            }
+
+            //创建Excel文件的对象
+            NPOI.HSSF.UserModel.HSSFWorkbook book = new NPOI.HSSF.UserModel.HSSFWorkbook();
+            //添加一个sheet
+            NPOI.SS.UserModel.ISheet sheet1 = book.CreateSheet("Sheet1");
+            //获取list数据
+            //List<TB_STUDENTINFOModel> listRainInfo = m_BLL.GetSchoolListAATQ(schoolname);
+
+            //  DataTable listRainInfo = mymssqlConnet.DAL_SelectDT_Par("EnrollmentGroup", mySqlParameters);
+            //给sheet1添加第一行的头部标题
+
+            NPOI.SS.UserModel.IRow row1 = sheet1.CreateRow(0);
+            row1.CreateCell(0).SetCellValue("HEX");
+            row1.CreateCell(1).SetCellValue("字符串[双击注释]");
+            row1.CreateCell(2).SetCellValue("点击发送");
+            //row1.CreateCell(3).SetCellValue("顺序");
+            row1.CreateCell(4).SetCellValue("延时ms");
+            for (int i = 0; i < DataGridView1.Rows.Count; i++)
+            {
+
+
+                object Column2 = DataGridView1.Rows[i].Cells["Column2"].Value;
+                if (Column2 == null)
+                    continue;
+
+                NPOI.SS.UserModel.IRow rowtemp = sheet1.CreateRow(i + 1);
+                rowtemp.CreateCell(1).SetCellValue(Column2.ToString());
+
+                object Column1 = ((DataGridViewCheckBoxCell)DataGridView1.Rows[i].Cells["Column1"]).Value;
+                if (Column1 == null)
+                    Column1 = false;
+
+                rowtemp.CreateCell(0).SetCellValue((bool)Column1 == false ? "0" : "1");
+
+                rowtemp.CreateCell(2).SetCellValue(DataGridView1.Rows[i].Cells["Column3"].Value.ToString());
+                //rowtemp.CreateCell(3).SetCellValue(DataGridView1.Rows[i].Cells["Column4"].Value.ToString());
+                rowtemp.CreateCell(4).SetCellValue(DataGridView1.Rows[i].Cells["Column5"].Value.ToString());
+
+            }
+            FileStream ms = File.Create(Application.StartupPath + "\\SaveExcel.xls");
+            try
+            {
+
+                book.Write(ms);
+                ms.Seek(0, SeekOrigin.Begin);
+               
+            }
+            catch
+            {
+            }
+            finally
+            {
+                if (ms != null)
+                {
+                    ms.Close();
+                }
+
+            }
+
             Close();
         }
         /// <summary>
@@ -1039,7 +1153,7 @@ namespace serialport
             }
 
             //组帧
-            string str = "68" + MeterAddr + gdData + Data1 + Data2 + Data3;
+            string str = txt_Code.Text + "68" + MeterAddr + gdData + Data1 + Data2 + Data3;
             str = str.Replace(" ", "");
 
             if (str.Length % 2 != 0)
@@ -1242,44 +1356,6 @@ namespace serialport
         private void btn_asyn_Click(object sender, EventArgs e)
         {
             dateTimePicker1.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-        }
-
-        private void btn_Conversion_Click(object sender, EventArgs e)
-        {
-            string inputData = txt_originalData.Text.ToString();
-            string IntoData = "";
-
-            //10进制转16进制
-            //16进制转10进制
-            //10进制转2进制
-            //2进制转10进制
-            //转ASCILL码
-
-            switch (cbo_IntoTheSystem.Text)
-            {
-                case "10进制转16进制":
-                    IntoData = CommonlyHelper.ConvertBase(inputData, 10, 16);
-                    break;
-                case "16进制转10进制":
-                    IntoData = CommonlyHelper.ConvertBase(inputData, 16, 10);
-                    break;
-                case "10进制转2进制":
-                    IntoData = CommonlyHelper.ConvertBase(inputData, 10, 2);
-                    break;
-                case "2进制转10进制":
-                    IntoData = CommonlyHelper.ConvertBase(inputData, 2, 10);
-                    break;
-                case "ASCILL码转字符串":
-                    IntoData = CommonlyHelper.AscillToString(inputData);
-                    break;
-                case "字符串转ASCILL码":
-                    IntoData = CommonlyHelper.ConvertAscill(inputData);
-                    break;
-
-
-            }
-
-            txt_resultsData.Text = IntoData;
         }
 
         private void btn_dqData_Click(object sender, EventArgs e)
@@ -2170,70 +2246,42 @@ namespace serialport
             txtReceived2.Visible = true;
             txtReceived3.Visible = true;
 
-            //if (btn_RecAddHeight.Text == "半展开")
-            //{
-            //    btn_RecAddHeight.Text = "全展开";
-            //    skinGroupBox10.Location = new Point(7, 146);
-            //    skinGroupBox10.Size = new Size(610, 649);
-            //    txtReceived.Height = 603;
-            //    txtReceived2.Height = 603;
-            //    txtReceived3.Height = 603;
-
-            //}
             if (btn_RecAddHeight.Text == "展开")
             {
+
+
                 skinGroupBox1.Visible = false;
-                skinGroupBox3.Visible = false;
-                skinGroupBox11.Visible = false;
-                //gb_extension.Visible = false;
 
                 btn_RecAddHeight.Text = "收缩";
                 skinGroupBox10.Location = new Point(7, 146);
-                skinGroupBox10.Size = new Size(1213, 649);
+                skinGroupBox10.Size = new Size(996, 518);
 
-                txtReceived.Height = 603;
-                txtReceived.Width = 400;
+                txtReceived.Height = 474;
 
-                panel2.Location = new Point(407, 13);
-                txtReceived2.Location = new Point(407, 40);
-                txtReceived2.Height = 603;
-                txtReceived2.Width = 400;
+                txtReceived2.Height = 474;
 
-                panel3.Location = new Point(809, 13);
-                txtReceived3.Location = new Point(809, 40);
-                txtReceived3.Height = 603;
-                txtReceived3.Width = 400;
+                txtReceived3.Height = 474;
 
-                skinGroupBox11.Visible = false;
-                skinGroupBox1.Visible = false;
+
 
             }
             else if (btn_RecAddHeight.Text == "收缩")
             {
+
+
                 skinGroupBox1.Visible = true;
-                skinGroupBox3.Visible = true;
-                skinGroupBox11.Visible = true;
-                //gb_extension.Visible = true;
 
                 btn_RecAddHeight.Text = "展开";
                 skinGroupBox10.Location = new Point(7, 268);
-                skinGroupBox10.Size = new Size(610, 527);
+                skinGroupBox10.Size = new Size(996, 396);
 
-                txtReceived.Height = 481;
-                txtReceived.Width = 200;
+                txtReceived.Height = 352;
 
-                panel2.Location = new Point(205, 13);
-                txtReceived2.Location = new Point(205, 40);
-                txtReceived2.Height = 481;
-                txtReceived2.Width = 200;
+                txtReceived2.Height = 352;
 
-                panel3.Location = new Point(405, 13);
-                txtReceived3.Location = new Point(405, 40);
-                txtReceived3.Height = 481;
-                txtReceived3.Width = 200;
+                txtReceived3.Height = 352;
 
-                skinGroupBox11.Visible = true;
-                skinGroupBox1.Visible = true;
+
             }
 
 
@@ -2274,14 +2322,12 @@ namespace serialport
                 if (comport2.IsOpen)
                 {
                     btn_Open2.Text = "&C关闭端口";
-                    Lbl_Flag2.Text = "开启";
-                    Lbl_Flag2.ForeColor = Color.Green;
+
                 }
                 else
                 {
                     btn_Open2.Text = "&O打开端口";
-                    Lbl_Flag2.Text = "关闭";
-                    Lbl_Flag2.ForeColor = Color.Red;
+
                 }
                 if (comport2.IsOpen) txt_Send.Focus();
             }
@@ -2324,14 +2370,12 @@ namespace serialport
                 if (comport3.IsOpen)
                 {
                     btn_Open3.Text = "&C关闭端口";
-                    Lbl_Flag3.Text = "开启";
-                    Lbl_Flag3.ForeColor = Color.Green;
+
                 }
                 else
                 {
                     btn_Open3.Text = "&O打开端口";
-                    Lbl_Flag3.Text = "关闭";
-                    Lbl_Flag3.ForeColor = Color.Red;
+
                 }
                 if (comport3.IsOpen) txt_Send.Focus();
             }
@@ -2359,15 +2403,15 @@ namespace serialport
 
         private void txtReceived_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (txtReceived.Width == 600)
+            if (txtReceived.Width == 990)
             {
-                txtReceived.Width = 200;
+                txtReceived.Width = 330;
                 txtReceived2.Visible = true;
                 txtReceived3.Visible = true;
             }
-            else if (txtReceived.Width == 200)
+            else if (txtReceived.Width == 330)
             {
-                txtReceived.Width = 600;
+                txtReceived.Width = 990;
                 txtReceived2.Visible = false;
                 txtReceived3.Visible = false;
             }
@@ -2375,17 +2419,17 @@ namespace serialport
 
         private void txtReceived2_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (txtReceived2.Width == 600)
+            if (txtReceived2.Width == 990)
             {
-                txtReceived2.Location = new Point(205, 40);
-                txtReceived2.Width = 200;
+                txtReceived2.Location = new Point(333, 42);
+                txtReceived2.Width = 330;
                 txtReceived.Visible = true;
                 txtReceived3.Visible = true;
             }
-            else if (txtReceived2.Width == 200)
+            else if (txtReceived2.Width == 330)
             {
-                txtReceived2.Location = new Point(5, 40);
-                txtReceived2.Width = 600;
+                txtReceived2.Location = new Point(3, 42);
+                txtReceived2.Width = 990;
                 txtReceived.Visible = false;
                 txtReceived3.Visible = false;
             }
@@ -2393,17 +2437,17 @@ namespace serialport
 
         private void txtReceived3_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (txtReceived3.Width == 600)
+            if (txtReceived3.Width == 990)
             {
-                txtReceived3.Location = new Point(405, 40);
-                txtReceived3.Width = 200;
+                txtReceived3.Location = new Point(663, 42);
+                txtReceived3.Width = 330;
                 txtReceived.Visible = true;
                 txtReceived2.Visible = true;
             }
-            else if (txtReceived3.Width == 200)
+            else if (txtReceived3.Width == 330)
             {
-                txtReceived3.Location = new Point(5, 40);
-                txtReceived3.Width = 600;
+                txtReceived3.Location = new Point(3, 42);
+                txtReceived3.Width = 990;
                 txtReceived.Visible = false;
                 txtReceived2.Visible = false;
             }
@@ -3027,6 +3071,13 @@ namespace serialport
         private void btn_SendClear_Click(object sender, EventArgs e)
         {
             txt_Send.Text = "";
+        }
+
+        private void skinButton1_Click(object sender, EventArgs e)
+        {
+            ConvertStr Ab = new ConvertStr();
+            Ab.Show();
+
         }
     }
 }
